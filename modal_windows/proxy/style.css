@@ -1,0 +1,81 @@
+
+body {
+    height: 100vh;
+    padding: 0;
+    padding-top: 30px;
+    margin: 0;
+    overflow: hidden;
+    font-family: helvetica;
+}
+
+.input {
+    width: 100vw;
+    text-align: center;
+}
+
+input[type=text] {
+    font-size: 15px;
+}
+
+ .a {
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    color: #555;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.a:hover {
+    color: #ffdb4d
+}
+
+label {
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+}
+
+label input {
+    display: none; /* <--скрываем дефолтный чекбокс */
+}
+
+label span { /* <-- стилизируем новый */
+    height: 10px;
+    width: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    position: relative;
+    background-color: #fff;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+[type=checkbox]:checked + span:before {/* <-- ставим иконку, когда чекбокс включен  */
+    content: '\2714';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ffdb4d;
+    border-radius: 2px;
+    padding: 0px 3px 0px 2px;
+  }
+
+.btn {
+    padding: 1px 13px;
+    font-size: 15px;
+    line-height: 30px;
+    height: 32px;
+    background-color: #ffdb4d;
+    border: none;
+    border-radius: 3px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
